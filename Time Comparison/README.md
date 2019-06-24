@@ -41,3 +41,5 @@ Output for the current program is : Time Elapsed: 0.000029999999213032423 second
 ## Conclusion
 As far the timing result Add2_Timing is faster than Add21_Timer.
 But the performance.now() methos is not a reliable method to calculate the time complexity. It may vary based on your System Performance.
+The same machine will record different time.
+for fast Algorithm, speed measurments may not be precise enough.
