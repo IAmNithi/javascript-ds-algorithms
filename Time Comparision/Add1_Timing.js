@@ -1,3 +1,4 @@
+// Time Elapsed: 0.009855000000214205 seconds. 
 function addUpTo(n){
     let result = 0;
     for(let i=0;i<n;i++){
