@@ -50,4 +50,4 @@ Back Down. Bye!
 
 ## Chart 
 
-![O(n)]('./foo1.png')
+![O(n)](foo1.png)
