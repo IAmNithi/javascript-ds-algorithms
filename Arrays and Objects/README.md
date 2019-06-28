@@ -1,5 +1,7 @@
 # Objects
 
+objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
 ## Big O of Objects
 
 * Insertion - O(1)
@@ -19,6 +21,8 @@ When you Dont need any ordering, Objects are excellent Choice !
 * hasOwnProperty - O(1)
 
 # Arrays
+
+The Array object lets you store multiple values in a single variable. It stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
 
 ## When you need Arrays
 
