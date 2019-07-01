@@ -1,4 +1,4 @@
-// counting unique values in an array. It can also contain negative numbers
+// counting unique values in an array. It can also contain negative numbers. Time complexity is O(N)
 
 function countUniqueValues(arr){
     let values = {};
