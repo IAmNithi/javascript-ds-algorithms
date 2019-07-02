@@ -3,7 +3,7 @@
 
 function validAnagram(a,b){
     if(a.length !== b.length){
-        console.log(false);
+        return false;
     }
     let lookup = {};
     for(let i=0; i<a.length; i++){
@@ -13,12 +13,12 @@ function validAnagram(a,b){
     for(let i=0; i<b.length;i++){
         let letter = b[i];
         if(!(lookup[letter])){
-            console.log(false);
+            return false;
         } else {
             lookup[letter] -= 1;
         }
     }
-    console.log(true);
+    return true;
 }
 
 validAnagram('', '');

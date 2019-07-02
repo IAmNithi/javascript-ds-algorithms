@@ -3,7 +3,7 @@
 
 function maxSumarrayValues(arr, num){
     if(num > arr.length){
-        console.log(null);
+        return null;
     }
     let max = -Infinity;
     for(let i=0; i < arr.length - num +1; i++){
@@ -15,7 +15,7 @@ function maxSumarrayValues(arr, num){
             max = temp;
         }
     }
-    console.log(max);
+    return max;
 }
 
 
@@ -28,7 +28,7 @@ maxSumarrayValues(array, 2)
 function maxSumarrayValuesRef(arr,num){
     let maxSum = 0;
     let tempSum = 0;
-    if(arr.length < num) console.log(null);
+    if(arr.length < num) return null;
     for(let i=0;i<num;i++){
         maxSum += arr[i];
     }
@@ -37,7 +37,7 @@ function maxSumarrayValuesRef(arr,num){
         tempSum = tempSum - arr[i - num] + arr[i];
         maxSum =  Math.max(maxSum, tempSum);
     }
-    console.log(maxSum);
+    return maxSum;
 }
 
 maxSumarrayValuesRef(array, 2);
