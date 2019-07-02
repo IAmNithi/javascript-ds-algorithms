@@ -2,7 +2,7 @@
 // if the value is not found, return -1
 // The problem is solved using  binary search with  divide and conquer algorithm
 // Note : Binary Search works only when the array is in sorted manner 
-
+// Time Complexity of the following solution is O(log n)
 function search(arr, val){
     let min = 0;
     let max = arr.length -1;
