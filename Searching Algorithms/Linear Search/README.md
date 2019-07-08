@@ -11,14 +11,14 @@ linear search or sequential search is a method for finding an element within a l
 
 ## Linear Search BIG O
 
-# Best Case
+### Best Case
 
 O(1)
 
-# Worst Case
+### Worst Case
 
 O(N)
 
-# Average
+### Average
 
 O(N)

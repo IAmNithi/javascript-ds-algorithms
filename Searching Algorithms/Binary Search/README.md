@@ -24,11 +24,11 @@ Binary Search can be performed only when the array is in sorted manner
 
 ## BIG O Of Binary Search
 
-# Worst and Average Case
+### Worst and Average Case
 
 O(log n)
 
-# Best Case
+### Best Case
 
 O(1)
 
