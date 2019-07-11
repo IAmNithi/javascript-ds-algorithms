@@ -20,4 +20,9 @@ A sorting algorithm where the largest values bubble up to the top!
 * Return the sorted array
 
 ## Time Complexity
+
+### Worst  Case
 **O(n^2)**
+
+### Best Case  
+**O(n)**
