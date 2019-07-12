@@ -78,3 +78,11 @@ const swap = (arr, idx1, idx2) => {
   [arr[idx1],arr[idx2]] = [arr[idx2],arr[idx1]];
 }
 ```
+
+## Comparing Bubble, Selection and Insertion Sort
+
+|    Algorithm    | Time Complexity (Best) | Time Complexity (Average) | Time Complexity (Worst) | Space Complexity |
+|      :---:      |          :---:         |           :---:           |          :---:          |       :---:      |
+|   Bubble Sort   |        **O(n)**        |        **O(n^2)**         |        **O(n^2)**       |     **O(1)**     |
+|  Insertion Sort |        **O(n)**        |        **O(n^2)**         |        **O(n^2)**       |     **O(1)**     |
+|  Selection Sort |       **O(n^2)**       |        **O(n^2)**         |        **O(n^2)**       |     **O(1)**     |
