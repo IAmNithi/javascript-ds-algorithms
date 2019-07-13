@@ -4,7 +4,7 @@ Builds up the sort by gradually creating a larger left half which is always sort
 
 ## Example
 
-```
+```javascript
 [ 5, 3, 4, 1, 2 ]
 [ 3, 5, 4, 1, 2 ]
 [ 3, 4, 5, 1, 2 ]
