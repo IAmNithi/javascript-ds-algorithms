@@ -38,6 +38,13 @@
     * If the value in the first array is larger than the value in the second array, push the value in the second array into our results and move on to the next value in the second array
     * Once we exhaust one array, push in all remaining values from the other array
 
+## Merge Sort Pseudocode
+
+* Break up the array into halves until you have arrays that are empty or have one element
+* Once you have smaller sorted arrays, merge those arrays with other sorted arrays until you are back at the full length of the array
+* Once the array has been merged back together, return the merged (and sorted!) array
+
+
 ## Time Complexity of Merge Sort
 
 | Time Complexity (Best)   | Time Complexity (Average)	| Time Complexity (Worst) | Space Complexity |
