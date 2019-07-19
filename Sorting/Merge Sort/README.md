@@ -44,6 +44,21 @@
 * Once you have smaller sorted arrays, merge those arrays with other sorted arrays until you are back at the full length of the array
 * Once the array has been merged back together, return the merged (and sorted!) array
 
+## How it Works?
+
+<p align="center">
+[10,24,73,76]
+
+mergeSort([10,24,76,73])
+
+[10,24] merge [73,76]
+
+mergeSort([10,24]) mergeSort([76,73])
+
+[10] merge [24]     [76] merge [73]
+
+mergeSort([10])  mergeSort([24])     mergeSort([76])  mergeSort([73])
+</p>
 
 ## Time Complexity of Merge Sort
 
