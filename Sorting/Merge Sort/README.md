@@ -46,7 +46,6 @@
 
 ## How it Works?
 
-```
 <p align="center">
 [10,24,73,76]
 mergeSort([10,24,76,73])
@@ -55,7 +54,6 @@ mergeSort([10,24]) mergeSort([76,73])
 [10] merge [24]     [76] merge [73]
 mergeSort([10])  mergeSort([24])     mergeSort([76])  mergeSort([73])
 </p>
-```
 
 ## Time Complexity of Merge Sort
 
