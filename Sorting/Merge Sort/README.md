@@ -47,12 +47,12 @@
 ## How it Works?
 
 <p align="center">
-[10,24,73,76]<br />
-mergeSort([10,24,76,73])<br />
-[10,24] merge [73,76]<br />
-mergeSort([10,24]) mergeSort([76,73])<br />
-[10] merge [24]     [76] merge [73]<br />
-mergeSort([10])  mergeSort([24])     mergeSort([76])  mergeSort([73])
+<b>[10,24,73,76]</b><br />
+<b>mergeSort([10,24,76,73])</b><br />
+<b>[10,24] merge [73,76]</b><br />
+<b>mergeSort([10,24]) mergeSort([76,73])</b><br />
+<b>[10] merge [24]     [76] merge [73]</b><br />
+<b>mergeSort([10])  mergeSort([24])     mergeSort([76])  mergeSort([73])</b>
 </p>
 
 ## Time Complexity of Merge Sort
