@@ -16,3 +16,5 @@ Quicksort is an efficient sorting algorithm, serving as a systematic method for 
 * The order of elements on either side of the pivot doesn't matter!
 * The helper should do this in place, that is, it should not create a new array
 * When complete, the helper should return the index of the pivot
+
+## Picking a pivot
