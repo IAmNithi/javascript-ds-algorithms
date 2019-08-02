@@ -14,7 +14,7 @@ function findPair(arr, pair){
         }
       }
     }
-    console.log(result);
+    return result;
   }
   
   var a = [0,5,10,15,20,25,30];
