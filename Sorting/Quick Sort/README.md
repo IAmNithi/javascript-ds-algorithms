@@ -27,4 +27,4 @@ Quicksort is an efficient sorting algorithm, serving as a systematic method for 
 
 | Time Complexity (Best)   | Time Complexity (Average)	| Time Complexity (Worst) | Space Complexity |
 |          :---:           |          :---:             |         :---:           |       :---:      |
-|     **O(n log n)**       |      **O(n log n)**        |      **O(n log n)**     |      **O(n)**    |
+|     **O(n log n)**       |      **O(n log n)**        |       **O(n^2)**        |   **O(log n)**   |
