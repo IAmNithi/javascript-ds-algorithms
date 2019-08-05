@@ -24,3 +24,7 @@ Quicksort is an efficient sorting algorithm, serving as a systematic method for 
 * For simplicity, we'll always choose the pivot to be the first element
 
 ## Time Complexity of Quick Sort
+
+| Time Complexity (Best)   | Time Complexity (Average)	| Time Complexity (Worst) | Space Complexity |
+|          :---:           |          :---:             |         :---:           |       :---:      |
+|     **O(n log n)**       |      **O(n log n)**        |      **O(n log n)**     |      **O(n)**    |
