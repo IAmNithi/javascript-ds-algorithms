@@ -52,3 +52,60 @@ To implement a hash table, we'll be using an array.
 In order to look up values by key, we need a way to convert keys into valid array indices.
 
 A function that performs this task is called a hash function.
+
+## What makes a Good Hash
+
+* Fast (i.e. constant time)
+* Doesn't cluster outputs at specific indices, but distributes uniformly
+* Deterministic (same input yields same output)
+
+Here's a hash that works on strings only:
+```javascript
+function hash(key, arrayLen) {
+  let total = 0;
+  for (let char of key) {
+    // map "a" to 1, "b" to 2, "c" to 3, etc.
+    let value = char.charCodeAt(0) - 96
+    total = (total + value) % arrayLen;
+  }
+  return total;
+}
+
+hash("pink", 10); // 0
+hash("orangered", 10); // 7
+hash("cyan", 10); // 3
+```
+Refactoring our Hash
+
+```javascript
+function hash(key, arrayLen) {
+  let total = 0;
+  let WEIRD_PRIME = 31;
+  for (let i = 0; i < Math.min(key.length, 100); i++) {
+    let char = key[i];
+    let value = char.charCodeAt(0) - 96
+    total = (total * WEIRD_PRIME + value) % arrayLen;
+  }
+  return total;
+}
+```
+## Prime numbers? wut.
+
+The prime number in the hash is helpful in spreading out the keys more uniformly.
+
+It's also helpful if the array that you're putting values into has a prime length.
+
+You don't need to know why. (Math is complicated!) But here are some links if you're curious.
+
+Why do hash functions use prime numbers?
+
+Does making array size a prime number help in hash table implementation?
+
+## Dealing with Collisions
+
+Even with a large array and a great hash function, collisions are inevitable. 
+
+There are many strategies for dealing with collisions, but we'll focus on two:
+
+1. Separate Chaining
+2. Linear Probing
