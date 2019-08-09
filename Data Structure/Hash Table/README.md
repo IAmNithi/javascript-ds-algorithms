@@ -109,3 +109,67 @@ There are many strategies for dealing with collisions, but we'll focus on two:
 
 1. Separate Chaining
 2. Linear Probing
+
+## Separate Chaining
+
+With separate chaining, at each index in our array we store values using a more sophisticated data structure (e.g. an array or a linked list).
+
+This allows us to store multiple key-value pairs at the same index.
+
+## Linear Probing
+
+With linear probing, when we find a collision, we search through the array to find the next empty slot.
+
+Unlike with separate chaining, this allows us to store a single key-value at each index.
+
+## A HashTable Class
+
+```javascript
+class HashTable {
+  constructor(size=53){
+    this.keyMap = new Array(size);
+  }
+
+  _hash(key) {
+    let total = 0;
+    let WEIRD_PRIME = 31;
+    for (let i = 0; i < Math.min(key.length, 100); i++) {
+      let char = key[i];
+      let value = char.charCodeAt(0) - 96
+      total = (total * WEIRD_PRIME + value) % this.keyMap.length;
+    }
+    return total;
+  }
+}
+```
+
+## Set / Get
+
+### Set
+
+1. Accepts a key and a value
+2. Hashes the key
+3. Stores the key-value pair in the hash table array via separate chaining
+
+### Get
+
+1. Accepts a key
+2. Hashes the key
+3. Retrieves the key-value pair in the hash table
+4. If the key isn't found, returns undefined
+
+## Keys / Values
+
+### Keys
+
+Loops through the hash table array and returns an array of keys in the table
+
+## Values
+
+Loops through the hash table array and returns an array of values in the table
+
+## Bigo O of Hash Table
+
+|       Insert      |         Deletion     	|       Access      |
+|       :---:       |          :---:        |        :---:      |
+|      **O(1)**     |         **O(1)**      |      **O(1)**     |
