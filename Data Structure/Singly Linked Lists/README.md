@@ -19,3 +19,8 @@ Linked Lists consist of nodes, and each node has a value and a pointer to anothe
 * Indexed in order!
 * Insertion and deletion can be expensive
 * Can quickly be accessed at a specific index
+
+## Pushing
+
+Adding a new node to the end of the Linked List!
+
