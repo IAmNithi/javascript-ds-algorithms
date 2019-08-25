@@ -138,3 +138,13 @@ Reversing the Linked List
 * Set prev to be the value of the node variable
 * Set the node variable to be the value of the next variable
 * Once you have finished looping, return the list
+
+## Big O of Singly Linked Lists
+
+Insertion -   **O(1)**
+
+Removal -   It depends.... **O(1)** or **O(N)**
+
+Searching -   **O(N)**
+
+Access -   **O(N)**
