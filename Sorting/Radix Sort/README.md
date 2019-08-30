@@ -25,3 +25,18 @@ function getDigit(num, i) {
   return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10;
 }
 ```
+
+digitCount(num) - returns the number of digits in num
+
+```javascript
+digitCount(1); // 1
+digitCount(25); // 2
+digitCount(314); // 3
+```
+
+```javascript
+function digitCount(num) {
+  if (num === 0) return 1;
+  return Math.floor(Math.log10(Math.abs(num))) + 1;
+}
+```
