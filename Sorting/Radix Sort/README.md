@@ -69,3 +69,9 @@ function mostDigits(nums) {
 * place each number in the corresponding bucket based on its kth digit
 * Replace our existing array with values in our buckets, starting with 0 and going up to 9
 * return list at the end!
+
+## Radix Sort Big O
+
+| Time Complexity (Best)   | Time Complexity (Average)	| Time Complexity (Worst) | Space Complexity |
+|          :---:           |          :---:             |         :---:           |       :---:      |
+|         **O(nk)**        |         **O(nk)**          |        **O(nk)**        |   **O(n + k)**   |
